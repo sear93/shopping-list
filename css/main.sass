@@ -1,0 +1,79 @@
+body
+    background-color: #000000
+    font-family: 'Ubuntu Mono', monospace
+    position: relative
+.wrapper
+    width: 30%
+    margin: auto
+    background-color: #585858
+    border-radius: 5px
+
+ul
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 0
+li
+    font-weight: bold
+    text-transform: uppercase
+    list-style: none
+    width: 100%
+    margin: 0
+    color: #fff
+    padding: 20px 20px
+    margin-bottom: 20px
+    background-color: #400080
+    transition: all 0.5s ease
+    text-align: center
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+    user-select: none
+    border-radius: 5px
+    &:hover
+        background-color: #400040
+h1
+    text-align: center
+    text-transform: uppercase
+    padding-top: 20px
+
+input
+    display: none
+    &:checked + label::before
+        background-color: green
+        border-radius: 50%
+    &:checked + label
+        color: #000
+        font-weight: bold
+        transition: 0.4s
+        text-decoration: line-through
+        
+        
+        
+label
+    padding-left: 20px
+    cursor: pointer
+    font-size: 20px
+    position: relative
+    &::before
+        content: ''
+        display: inline-block
+        width: 20px
+        height: 20px
+        transform: rotate(45deg)
+        background-color: #000000
+        vertical-align: middle
+        margin-right: 10px
+        margin-left: -10px
+        transition: 0.6s
+        cursor: pointer
+        background-color: red
+        border: 1px solid #ccc
+        box-shadow: 0 10px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+.next
+    color: #fff
+    font-weight: bold
+    text-transform: uppercase
+    text-decoration: none
+    position: absolute
+    top: 0
